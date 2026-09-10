@@ -1,0 +1,24 @@
+{
+  "lastChangelogVersion": "0.85.1",
+  "theme": "dark",
+  "packages": [
+    "npm:pi-packages-manager",
+    "npm:@ff-labs/pi-fff",
+    "npm:pi-smart-fetch",
+    "npm:@majorgilles/pi-grill-me",
+    "npm:@janvitos/pi-plan-build",
+    "npm:pi-subagents",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@narumitw/pi-sync"
+  ],
+  "defaultProvider": "kimi-coding",
+  "defaultModel": "kimi-for-coding",
+  "subagents": {
+    "agentOverrides": {
+      "scout": {
+        "model": "kimi-for-coding-highspeed",
+        "thinking": "high"
+      }
+    }
+  }
+}
