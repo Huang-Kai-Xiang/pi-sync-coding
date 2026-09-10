@@ -1,4 +1,5 @@
 {
+  "tuiMode": "fullscreen",
   "lastChangelogVersion": "0.85.1",
   "theme": "dark",
   "packages": [
@@ -9,7 +10,8 @@
     "npm:@janvitos/pi-plan-build",
     "npm:pi-subagents",
     "npm:@juicesharp/rpiv-todo",
-    "npm:@narumitw/pi-sync"
+    "npm:@narumitw/pi-sync",
+    "npm:pi-powerline-footer"
   ],
   "defaultProvider": "kimi-coding",
   "defaultModel": "kimi-for-coding",
