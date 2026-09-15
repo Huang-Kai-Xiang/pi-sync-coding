@@ -1,25 +1,58 @@
 {
-  "tuiMode": "fullscreen",
-  "lastChangelogVersion": "0.85.1",
-  "theme": "dark",
-  "packages": [
-    "npm:@ff-labs/pi-fff",
-    "npm:pi-smart-fetch",
-    "npm:@majorgilles/pi-grill-me",
-    "npm:@janvitos/pi-plan-build",
-    "npm:pi-subagents",
-    "npm:@juicesharp/rpiv-todo",
-    "npm:@narumitw/pi-sync",
-    "npm:pi-powerline-footer"
-  ],
-  "defaultProvider": "kimi-coding",
-  "defaultModel": "kimi-for-coding",
-  "subagents": {
-    "agentOverrides": {
-      "scout": {
-        "model": "kimi-for-coding-highspeed",
-        "thinking": "high"
-      }
-    }
+ "tuiMode": "fullscreen",
+ "lastChangelogVersion": "0.85.1",
+ "theme": "dark",
+ "packages": [
+  "npm:pi-packages-manager",
+  "npm:@ff-labs/pi-fff",
+  "npm:pi-smart-fetch",
+  "npm:@majorgilles/pi-grill-me",
+  "npm:@janvitos/pi-plan-build",
+  "npm:pi-subagents",
+  "npm:@juicesharp/rpiv-todo",
+  "npm:@narumitw/pi-sync",
+  "npm:pi-powerline-footer"
+ ],
+ "defaultProvider": "kimi-coding",
+ "defaultModel": "k3",
+ "subagents": {
+  "agentOverrides": {
+   "scout": {
+    "model": "deepseek/deepseek-flash",
+    "thinking": "high"
+   },
+   "researcher": {
+    "model": "deepseek/deepseek-flash",
+    "thinking": "high"
+   },
+   "evidence-auditor": {
+    "model": "kimi-coding/k3",
+    "thinking": "high"
+   },
+   "worker": {
+    "model": "kimi-coding/kimi-for-coding-highspeed",
+    "thinking": "high"
+   },
+   "reviewer": {
+    "model": "kimi-coding/k3",
+    "thinking": "high"
+   },
+   "oracle": {
+    "model": "kimi-coding/k3",
+    "thinking": "max"
+   },
+   "delegate": {
+    "model": "deepseek/deepseek-flash",
+    "thinking": "high"
+   }
   }
+ },
+ "powerline": {
+  "cache_read": {
+   "format": "percent"
+  },
+  "disabledSegments": [
+   "cost"
+  ]
+ }
 }
